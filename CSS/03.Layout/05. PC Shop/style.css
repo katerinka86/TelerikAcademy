@@ -1,0 +1,99 @@
+body, html, h1, legend, fieldset, div, span, ul, li, input{
+    padding:0;
+    margin:0;
+}
+
+body {
+    font-family:sans-serif, Verdana, Arial;
+}
+
+div#wrapper {
+    width:670px;
+    border:1px solid black;
+    margin:20px;
+    padding-bottom:5px;
+    padding-right:5px;
+    border-radius:10px;
+    }
+
+header {
+    margin:10px 30px;
+}
+
+    header ul {
+        list-style-type:none;
+        text-align:center;
+    }
+
+        header ul li {
+            display:inline-block;
+        }
+
+            header ul li a {
+                color:#00ADF0;
+                font-size:24px;
+            }
+
+    header hr {
+        width:98%;
+        border:1px solid black;
+    }
+
+aside {
+    float: right;
+}
+
+    aside #slider {
+        margin-top:60px;
+    }
+
+        aside #slider span {
+            font-size:20px;
+        }
+
+        aside #slider span, aside #slider input[type=range] {
+            padding-top:20px;
+            padding-bottom:20px;
+            width:160px;
+        }
+
+section {
+    margin:auto;
+    margin-left:10px;
+    border:1px solid black;
+    width:425px;
+    padding:5px;
+}
+
+#forborder {
+    width:440px;
+    }
+
+    section article {
+        width:200px;
+        display:inline-block;
+        margin:5px;
+    }
+
+        section article fieldset {
+            border-bottom-color:black; 
+        }
+
+            section article fieldset legend {
+                text-align:center;
+                font-size:16px;
+            }
+
+            section article fieldset img {
+                float: left;
+                margin-right:5px;
+                margin-left:5px;
+            }
+
+            section article fieldset > p {
+                padding-top:10px;
+            }
+
+                section article fieldset p span {
+                    padding-left:25px;
+                }

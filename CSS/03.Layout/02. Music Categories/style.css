@@ -1,0 +1,54 @@
+div#main {
+    width: 520px;
+    background-color: #EEEEEE;
+    height:540px;
+    margin:30px;
+    padding-top:10px; 
+}
+
+    div div {
+        width: 460px;
+        border: 1px solid black;
+        margin:20px;
+        height:120px;
+        padding:10px;    
+    }
+
+p {
+    display: inline;
+    float: right;
+    margin-top:44px;
+}
+
+img {
+    float: left;
+    padding-right:10px;
+}
+
+#second {
+    margin-top:28px;
+}
+
+#third {
+    margin-top:28px;
+}
+
+#first {
+    padding-left: 20px;
+    font-size: 16pt;
+    padding-top:0px;
+    font-family:'Arial Rounded MT';
+}
+
+input[type=button] {
+    background-image:url(images/button.png);
+    background-repeat:repeat-y;
+    color: white;
+    width:80px;
+    height:29px;
+    border-top: 2px solid #E38382;
+    border-right: 2px solid #650000;
+    border-bottom: 2px solid #650000;
+    border-left: 2px solid #9C2829;
+}
+

@@ -1,0 +1,41 @@
+table {
+    width: 40%;
+    border-collapse: collapse;
+    margin:20px;
+    font-family:Verdana;
+    font-size:18px;
+    border-top:1px solid #CDCCB7;
+    border-bottom:1px solid #CDCCB7;
+}
+
+table, th, td {
+    border-left: 2px solid #CDCCB7;
+    border-right: 2px solid #CDCCB7;
+    padding:10px;
+    font-weight:normal;
+    text-align:left;
+}
+
+img {
+    width: 30px;
+    height: 20px;
+}
+
+th {
+    background-color:#56B906;
+    color:white;
+    border: 2px solid #2F7B0D;
+}
+
+tr:nth-child(2n+1) {
+    background-color:#FFFFFF;
+}
+
+tr:nth-child(2n) {
+    background-color:#ECECD8;
+}
+
+#checkbox {
+    width:18%;
+}
+

@@ -1,0 +1,106 @@
+body, h1, p, div, span, input, img {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    margin: 15px;
+}
+
+#wrapper {
+    width:720px;
+    border:2px solid #F3D419;
+}
+
+#first, #second {
+    width:700px;
+}
+
+#gradient {
+    height:20px;
+    width:720px;
+    background: #3b3b3b;
+    background: -moz-linear-gradient(top, #3b3b3b 0%, #242424 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#3b3b3b), color-stop(100%,#242424));
+    background: -webkit-linear-gradient(top, #3b3b3b 0%,#242424 100%);
+    background: -o-linear-gradient(top, #3b3b3b 0%,#242424 100%);
+    background: -ms-linear-gradient(top, #3b3b3b 0%,#242424 100%);
+    background: linear-gradient(to bottom, #3b3b3b 0%,#242424 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#3b3b3b', endColorstr='#242424',GradientType=0 );
+}
+
+#first {
+    height: 60px;
+    background-color:#3B3B3B;
+    background-image: url(images/computer.png);
+    background-repeat:no-repeat;
+    background-position-x:10px;
+    background-position-y:10px;
+    padding:10px 10px 0px;
+    margin-bottom:0px;
+}
+
+    #first label {
+        color:white;
+        font-size:30px;
+        position:relative;
+        left:70px;
+        top:15px;
+    }
+
+    #first input[type=text] {
+        position:absolute;
+        left: 290px;
+        top:40px;
+        line-height:25px;
+        font-size:15px;
+        padding-left:10px;
+        padding-right:-10px;
+        width:130px;
+    }
+
+    #first input[type=password] {
+        position:absolute;
+        left: 470px;
+        top:40px;
+        line-height:25px;
+        font-size:15px;
+        width:130px;
+        padding-left:10px;
+    }
+
+    #first input[type=submit] {
+        position:absolute;
+        left:650px;
+        top:40px;
+        width:56px;
+        height:28px;
+        background-image: url(images/button.gif);
+        background-repeat:no-repeat;
+        border:none;
+    }
+
+#second {
+    height:220px;
+    background-color:#3B3B3B;
+    padding:10px;
+}
+
+    #second h1{
+        color:#FDD617;
+        font-family:Verdana;
+        font-size:28px;
+        font-weight:normal;
+        padding:10px;
+    }
+
+    #second p {
+        font-family:verdana;
+        font-size:16px;
+        color:#929292;
+        padding-left:10px;
+    }
+
+        #second p span {
+            color:#F6F6F6;
+        }

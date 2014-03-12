@@ -1,0 +1,48 @@
+table {
+    width: 20%;
+    background-color:#595959;
+    font-family:Calibri;
+    margin:20px;
+}
+
+th {
+    text-align: left;
+    font-weight: normal;
+    font-size:28px;
+    color:#AEB3AC;  
+}
+
+td {
+    font-size: 16px;
+    padding:8px;
+    font-family:Verdana;
+}
+
+td:nth-child(2n+1) {
+    color: #e5e8e9;
+    font-style:italic;
+}
+
+.name {
+    color: #e0e7b3;
+}
+
+.time {
+    color: #A9ABA6;
+}
+
+#support {
+    color: #F50D28;
+    font-weight:bold;
+    padding-top:0px;
+}
+
+#answer {
+    color: #DF6A2D;
+    font-weight: bold;
+}
+
+img {
+    width: 20px;
+    height: 20px;
+}

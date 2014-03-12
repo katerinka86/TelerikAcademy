@@ -1,0 +1,94 @@
+body, section, img {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: #bdb5f2;
+  /* Old browsers */
+  background: -moz-linear-gradient(top, #bdb5f2 0%, #4d0656 100%);
+  /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #bdb5f2), color-stop(100%, #4d0656));
+  /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top, #bdb5f2 0%, #4d0656 100%);
+  /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top, #bdb5f2 0%, #4d0656 100%);
+  /* Opera 11.10+ */
+  background: -ms-linear-gradient(top, #bdb5f2 0%, #4d0656 100%);
+  /* IE10+ */
+  background: linear-gradient(to bottom, #bdb5f2 0%, #4d0656 100%);
+  /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#bdb5f2', endColorstr='#4d0656',GradientType=0 );
+  /* IE6-9 */
+  background-repeat: no-repeat;
+  text-align: center;
+  min-height: 100%;
+  height: 3000px;
+  header {
+    border: 1px solid grey;
+    width: 450px;
+    text-align: center;
+    margin-left: 400px;
+    border-radius: 60px;
+    margin-top: 20px;
+    background: #cb60b3;
+    /* Old browsers */
+    background: -moz-linear-gradient(top, #cb60b3 0%, #720d77 50%, #de47ac 100%);
+    /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #cb60b3), color-stop(50%, #720d77), color-stop(100%, #de47ac));
+    /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top, #cb60b3 0%, #720d77 50%, #de47ac 100%);
+    /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top, #cb60b3 0%, #720d77 50%, #de47ac 100%);
+    /* Opera 11.10+ */
+    background: -ms-linear-gradient(top, #cb60b3 0%, #720d77 50%, #de47ac 100%);
+    /* IE10+ */
+    background: linear-gradient(to bottom, #cb60b3 0%, #720d77 50%, #de47ac 100%);
+    /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#cb60b3', endColorstr='#de47ac',GradientType=0 );
+    /* IE6-9 */
+    h2 {
+      font-style: italic;
+    }
+  }
+  section {
+    div {
+      position: relative;
+      text-align: left;
+      div {
+        display: none;
+        position: absolute;
+        left: 300px;
+        top: 30px;
+        width: 40%;
+        height: 300px;
+      }
+      &:hover div {
+        display: block;
+      }
+      > img:hover {
+        -moz-transform: skew(0deg);
+        -ms-transform: skew(0deg);
+        -o-transform: skew(0deg);
+        -webkit-transform: skew(0deg);
+        transform: skew(0deg);
+        opacity: 1;
+      }
+    }
+    > div > img {
+      height: 170px;
+      width: 170px;
+      margin: 30px 60px;
+      opacity: 0.5;
+      -moz-transform: skew(25deg) scale(0.5, 0.5);
+      -ms-transform: skew(25deg) scale(0.5, 0.5);
+      -o-transform: skew(25deg) scale(0.5, 0.5);
+      -webkit-transform: skew(25deg);
+      transform: skew(25deg) scale(0.5, 0.5);
+      -moz-transition: -moz-transform 2s;
+      -o-transition: -o-transform 2s;
+      -webkit-transition: -webkit-transform 2s;
+      transition: transform 2s;
+    }
+  }
+}
