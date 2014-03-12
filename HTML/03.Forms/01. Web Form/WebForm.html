@@ -1,0 +1,191 @@
+<!doctype html>
+<html>
+    <head>
+        <title>Web Form</title>
+		<meta charset="utf-8" />
+        <link rel="stylesheet" href="style.css" type="text/css" />
+    </head>
+    <body>
+        <form name="Personal Data" method="post" action="path/to/some-script.php">
+            <table>
+                <tfoot>
+                    <tr>
+                        <td colspan="2">
+                            <input type="submit" value="Submit" />
+                            <input type="reset" value="Clear This Form" />
+                        </td>
+                    </tr>
+
+                </tfoot>
+                <tbody>
+                    <tr>
+                        <td>
+                        <label for="ln">Last name</label>
+                        </td>
+                        <td>
+                            <input type="text" id="ln" name="Last name" value="Dimitrova"/>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="fn">First name</label>
+                        </td>
+                        <td>
+                            <input type="text" id="fn" name="First name" value="Katya" />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="textarea1">Address</label>
+                        </td>
+                        <td>
+                            <textarea id="textarea1" name="textarea1">Hristo Botev str. 106</textarea>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="city">City</label>
+                        </td>
+                        <td>
+                            <input type="text" id="city" name="city" value="Sofia" />
+                            <label for="state" id="state1">State</label>
+                            <input type="text" id="state" name="state" />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="pcode">Zip&#47;Postal Code</label>
+                        </td>
+                        <td>
+                            <input type="text" id="pcode" name="pcode" value="1000"/>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="country">Country</label>
+                        </td>
+                        <td>
+                            <select id="country">
+                                <option value="BG" selected="selected">Bulgaria</option>
+                                <option value="RU">Russia</option>
+                                <option value="UKR">Ukraine</option>
+                                <option value="FRA">France</option>
+                                <option value="SPA">Spain</option>
+                                <option value="SWE">Sweden</option>
+                                <option value="NOR">Norway</option>
+                                <option value="GER">Germany</option>
+                                <option value="FIN">Finland</option>
+                                <option value="POL">Poland</option>
+                                <option value="IT">Italy</option>
+                                <option value="UK">United Kingdom</option>
+                                <option value="ROM">Romania</option>
+                                <option value="BLR">Belarus</option>
+                                <option value="KAZ">Kazakhstan</option>
+                                <option value="GR">Greece</option>
+                                <option value="ICE">Iceland</option>
+                                <option value="HNG">Hungary</option>
+                                <option value="PRT">Portugal</option>
+                                <option value="SRB">Serbia</option>
+                                <option value="IRL">Ireland</option>
+                                <option value="AU">Austria</option>
+                                <option value="CHE">Czech Republic</option>
+                                <option value="RI">Republic of Ireland</option>
+                                <option value="GRG">Georgia</option>
+                                <option value="LTH">Lithuania</option>
+                                <option value="LAT">Latvia</option>
+                                <option value="CRO">Croatia</option>
+                                <option value="BH">Bosnia and Herzegovina</option>
+                                <option value="SLK">Slovakia</option>
+                                <option value="EST">Estonia</option>
+                                <option value="DM">Denmark</option>
+                                <option value="NED">Netherlands</option>
+                                <option value="SWE">Switzerland</option>
+                                <option value="MOL">Moldova</option>
+                                <option value="BEL">Belgium</option>
+                                <option value="ALB">Albania</option>
+                                <option value="MAC">Macedonia</option>
+                                <option value="TR">Turkey</option>
+                                <option value="SLO">Slovenia</option>
+                                <option value="MON">Montenegro</option>
+                                <option value="CYP">Cyprus</option>
+                                <option value="AZB">Azerbaijan</option>
+                                <option value="LUX">Luxembung</option>
+                                <option value="AND">Andorra</option>
+                                <option value="MLT">Malta</option>
+                                <option value="LHT">Liechtenstein</option>
+                                <option value="SM">San Marino</option>
+                                <option value="MNC">Monaco</option>
+                                <option value="VTK">Vatican City</option>
+                                <option value="OUTEUP">Outside of Europe</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="ccode">Phone &#40;country code, area code, number&#41;</label>
+                        </td>
+                        <td>
+                            <span>&#40;&#43;</span>
+                            <input type="tel" id="ccode" name="ccode" value="359" maxlength="3"/>
+                            <span>&#41;</span>
+                            <input type="tel" id="acode" name="acode" value="88" maxlength="2"/>
+                            <span>&#8211;</span>
+                            <input type="tel" id="pnumber" name="pnumber" value="8338484"/>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="email">E-mail</label>
+                        </td>
+                        <td>
+                            <input type="email" id="email" name="email" value="katya@gmail.com"/>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="month">Birthday</label>
+                        </td>
+                        <td>
+                            <span>Month</span>
+                            <input type="text" id="month" name="bday" value="06" maxlength="2"/>
+                            <span>Day</span>
+                            <input type="text" id="day" name="day" value="08" maxlength="2"/>
+                            <span>Year &#40;4 digit&#41;</span>
+                            <input type="text" id="year" name="year" value="1986" maxlength="4"/>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="gender">Gender</label>
+                        </td>
+                        <td>
+                            <select id="gender">
+                                <option value="value1">Male</option>
+                                <option value="value2" selected="selected">Female</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="startdate">Starting date</label>
+                        </td>
+                        <td>
+                            <input type="radio" name="radio" id="startdate" value="Spring 2006" checked="checked" />
+                            <span>Spring 2006</span>
+                            <input type="radio" name="radio" value="Summer 2006" />
+                            <span>Summer 2006</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="textarea2">Comments&#47;Questions</label>
+                        </td>
+                        <td>
+                            <textarea id="textarea2" name="textarea2">Please send me more information about the lodging</textarea>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </form>
+    </body>
+</html>

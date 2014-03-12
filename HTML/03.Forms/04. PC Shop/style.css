@@ -1,0 +1,53 @@
+#first {
+    border: 1px solid black;
+    border-radius:10px;
+    padding:5px;
+}
+#second {
+    border: 1px solid black;
+    margin:3px;
+}
+#slider {
+    width: 200px;
+    height:300px;
+    text-align:center;
+    vertical-align:central;
+    line-height:40px;
+}
+span {
+    display: inline-block;
+    font-size: 22px;
+    font-family: Calibri;
+}
+input[type=range] {
+    width: 155px;
+}
+ul {
+    list-style-type:none;
+    text-align: center;
+    padding:0;
+    margin:0;
+}
+    ul li {
+        display: inline-block;
+    }
+a {
+    font-size: 24px;
+    color: #24a4cb;
+}  
+#special {
+    height: 50px;
+    padding:0;
+    border-bottom:1px solid black;  
+}
+fieldset {
+    text-align: center;
+    border: 1px solid black;
+    margin:4px 3px 8px;
+}
+table td {
+    font-family: Calibri;
+    font-size: 16px;
+}
+
+

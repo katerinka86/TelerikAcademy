@@ -1,0 +1,33 @@
+div {
+    width:230px;
+    height:326px;
+    background-color: #808080;
+    margin:5px;
+    padding:10px;
+    border: 10px inset #533093;
+}
+[name=result] {
+    margin: 1px;
+    width: 220px;
+    height:50px;
+}
+[type=button] {
+    margin:2px;
+    width:50px;
+    height:50px;
+    background-color: #ede5e5;
+    font: bold 14pt arial,verdana;   
+}
+[name=zero], [name=evalo], [name=clear] {
+    width: 108px;
+    height: 50px;
+}
+
+[type=button]:hover {
+    background-color: #c7c1c1;
+}
+[type=button]:active {
+    background-color: #bf77da;
+}
+    
+   

@@ -1,0 +1,36 @@
+table 
+    {
+    width:200px;  
+    height:150px;
+    border:1px solid;
+    border-left-color: #ccc5c5;
+    border-right-color: #787373;
+    border-top-color: #ccc5c5;
+    border-bottom-color: #787373;
+    }
+td 
+    {
+    width: 30px;
+    height: 26px;
+    border:1px solid;
+    border-left-color: #787373;
+    border-right-color: #ccc5c5;
+    border-top-color: #787373;
+    border-bottom-color: #ccc5c5;
+    text-align: center;
+    font-size:14pt;
+    font-family:"Times New Roman", Times, serif;
+    }
+.right 
+    {
+    text-align: right;
+    }
+.left
+    {
+    text-align: left;
+    }
+.rightbottom
+    {
+    text-align: right;
+    vertical-align: bottom;
+    }

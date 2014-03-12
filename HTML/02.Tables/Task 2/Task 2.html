@@ -1,0 +1,25 @@
+<!doctype html>
+<html>
+<head>
+    <title>Task 2</title>
+    <meta charset="utf-8" /> 
+    <link rel="stylesheet" href="style.css" type="text/css"/>
+</head>
+<body>
+    <section>
+        <form name="myform" method="get" action="html_form_action.asp">
+            <label for="mname">Member Name:</label>
+                <input type="text" id="mname" title="Your name" required="required" maxlength="30"/>
+                    <span>&#42;req</span><br />
+            <label for="email">Email:</label>
+                <!-- Attribute <pattern>  is missing because the input element with a type attribute whose value is "email" represents a control for editing a list of e-mail addresses given in the element’s value (documentation: http://www.w3.org/TR/html-markup/input.email.html) -->
+                <input type="email" id="email" required="required" title="Your e-mail" maxlength="30"/>
+                    <span>&#42;req</span><br />
+            <label for="school">School:</label>
+                <input type="text" id="school" title="Your school" required="required" maxlength="30"/>
+                    <span>&#42;req</span><br />
+            <input type="image" src="submitbutton.jpg" name="submitbtn" alt="submit"/>
+        </form>  
+    </section>
+</body>
+</html>

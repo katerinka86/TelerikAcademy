@@ -1,0 +1,9 @@
+span {
+    font-weight: bold;
+    }
+form {
+    padding:10px; 
+}
+#mname, #email, #school {
+    margin: 2px;
+}

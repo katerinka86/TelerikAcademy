@@ -1,0 +1,67 @@
+table {
+    border-collapse:collapse;
+    margin:5px;
+    padding:5px;
+    width:25%;
+    font-family: Arial, Verdana, sans-serif;
+    font-size:12pt;
+}
+table, td {
+    border: 1px solid #605b5b;
+}
+td {
+    margin: 3px;
+    padding: 3px;
+}
+#ln,#fn, #email {
+    width: 23em;
+}
+#textarea1 {
+    width: 21em;
+    height: 4em;
+}
+#city {
+    width: 14em;
+}
+#pcode {
+    width: 8em;
+}
+#country {
+    width: 19em;
+}
+#ccode, #acode, #year, #state    {
+    width: 4em;
+}
+#pnumber {
+    width: 10em;
+}
+#month, #day {
+    width: 2em;
+}
+#gender {
+    width: 6em;
+}
+radio   {
+    width:auto;
+}
+#textarea2 {
+    width: 21em;
+    height: 6em;
+}
+tfoot {
+    background-color: #8fc096;
+    text-align:center;
+}
+ label {
+    display:block;
+    text-align:right;
+    font-weight:bold;
+}
+label#state1 {
+    display: initial;
+}
+textarea {
+    font: 10pt normal;
+    font-family: Arial, Verdana, sans-serif;
+}
+

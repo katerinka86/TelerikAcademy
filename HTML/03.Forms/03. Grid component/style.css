@@ -1,0 +1,64 @@
+table   {
+    border-collapse: collapse;
+    margin:10px;
+    width:60%; 
+}
+table, th, td {
+    border: 1px solid #b5abab;
+    padding: 5px;
+}
+th, tr:last-child {
+    background-color: #dde0e2;
+    font-size:14pt;
+}
+th {
+    text-align: left;
+    font: normal 12pt arial;
+}
+#right {
+    display: block;
+    text-align: right;
+}
+.noborder {
+    border: none;
+}
+#productid {
+    width: 3em;
+}
+#productname {
+    width: 13em;
+}
+#unitprice {
+    width: 8em;
+}
+#quantityperunit {
+    width: 10em;
+}
+#unitsinstock {
+    width: 8em;
+}
+.image  {
+    vertical-align: inherit;
+}
+.productid, .discontinued {
+    width: 6%;
+}
+.productname {
+    width: 20%;
+}
+.units {
+    width: 12%;
+}
+a:link  {
+    font-size:14pt;
+    text-decoration:none;
+    vertical-align: super;
+}
+a#selected {
+    padding:2px;
+    border:1px solid red;
+    
+}
+#footer {
+    word-spacing: initial;
+}
