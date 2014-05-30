@@ -1,0 +1,39 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <!-- Write an expression that checks if given print (x,  y) is within a circle K(O, 5). -->
+    <title>Point in a circle</title>
+    <link href="styles/js-console.css" rel="stylesheet" />
+</head>
+<body>
+    <div id="inputdiv">
+	    <div class="input">
+		    <label for="tb-first">X: </label>
+		    <input type="text" id="first"/>
+	    </div>
+        <div class="input">
+		    <label for="tb-second">Y: </label>
+		    <input type="text" id="second"/>
+	    </div>
+    </div>
+	<div id="inputbutton">
+		<a href="#" onclick="insideOrOutside()">Is the point inside or outside?</a>
+	</div>
+    <div id="js-console"></div>
+	<script src="scripts/js-console.js"></script>
+    <script>
+        function insideOrOutside() {
+            var x = jsConsole.readFloat("#first"),
+                y = jsConsole.readFloat("#second"),
+                circleRadius = 0;
+
+            if (Math.pow(x, 2) + Math.pow(y, 2) <= Math.pow(circleRadius,2)) {
+                jsConsole.writeLine("The point is inside the circle");
+            }
+            else {
+                jsConsole.writeLine("The point is outside a circle");
+            }
+        }
+    </script>
+</body>
+</html>
