@@ -1,0 +1,40 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<title>Two Integer Numbers</title>
+    <!-- Write an if statement that examines two integer variables and exchanges
+         their values if the first one is greater than the second one -->
+	<link href="styles/js-console.css" rel="stylesheet" />
+</head>
+<body>
+	<label for="tb-first">First number: </label>
+	<input type="text" id="tb-first"/>
+	<br />							  
+	<label for="tb-second">Second number: </label>
+	<input type="text" id="tb-second"/>
+	<br />
+	<a href="#" onclick="findBigger()">Check</a>
+	<div id="console">
+	</div>
+	<script src="scripts/js-console.js">	  
+	</script>		  
+	<script>
+
+	    function findBigger() {
+	        var first = jsConsole.readFloat("#tb-first");
+	        var second = jsConsole.readFloat("#tb-second");
+	        var third;
+
+	        if (first>second) {
+	            third = first;
+	            first = second;
+	            second = third;
+	            jsConsole.writeLine("Number 1: " + first + ", Number 2: " + second);
+	        }
+	        else {
+	            jsConsole.writeLine("Number 1: " + first + ", Number 2: " + second);
+	        }
+	    }
+	</script>			  
+</body>
+</html>

@@ -1,0 +1,46 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<title>Quadratic Equation</title>
+    <!-- Write a script that enters the coefficients a, b and c of a quadratic equation
+		a*x2 + b*x + c = 0-->
+	<link href="styles/js-console.css" rel="stylesheet" />
+</head>
+<body>
+	<label for="tb-first">A = </label>
+	<input type="text" id="tb-first"/>
+	<br />							  
+	<label for="tb-second">B = </label>
+	<input type="text" id="tb-second"/>
+	<br />
+    <label for="tb-third">C = </label>
+	<input type="text" id="tb-third"/>
+	<br />
+	<a href="#" onclick="quadraticEquation()">Check</a>
+	<div id="console">
+	</div>
+	<script src="scripts/js-console.js">	  
+	</script>		  
+	<script>
+
+	    function quadraticEquation() {
+	        var a = jsConsole.readInteger("#tb-first");
+	        var b = jsConsole.readInteger("#tb-second");
+	        var c = jsConsole.readInteger("#tb-third");
+	        var determinant = b * b - 4 * a * c;
+	        if (determinant < 0) {
+	            jsConsole.writeLine("No real roots");
+	        }
+	        else if (determinant === 0) {
+	            var x = -b / (2*a);
+	            jsConsole.writeLine("One real root: x = " + x);
+	        }
+	        else {
+	            var x1 = (-b + Math.sqrt(determinant) / (2 * a));
+	            var x2 = (-b - Math.sqrt(determinant) / (2 * a));
+	            jsConsole.writeLine("2 real roots: x1 = " + x1 + ", x2 = " +x2);
+	        }
+	    }
+	</script>			  
+</body>
+</html>

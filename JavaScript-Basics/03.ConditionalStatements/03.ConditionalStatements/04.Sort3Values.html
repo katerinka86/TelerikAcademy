@@ -1,0 +1,57 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<title>Sort 3 values</title>
+    <!-- Sort 3 real values in descending order using nested if statements.-->
+	<link href="styles/js-console.css" rel="stylesheet" />
+</head>
+<body>
+	<label for="tb-first">First number: </label>
+	<input type="text" id="tb-first"/>
+	<br />							  
+	<label for="tb-second">Second number: </label>
+	<input type="text" id="tb-second"/>
+	<br />
+    <label for="tb-third">Third number: </label>
+	<input type="text" id="tb-third"/>
+	<br />
+	<a href="#" onclick="findBigger()">Check</a>
+	<div id="console">
+	</div>
+	<script src="scripts/js-console.js">	  
+	</script>		  
+	<script>
+
+	    function findBigger() {
+	        var first = jsConsole.readInteger("#tb-first");
+	        var second = jsConsole.readInteger("#tb-second");
+	        var third = jsConsole.readInteger("#tb-third");
+
+	        if (first > second && first > third) {
+	            if (second > third) {
+	                jsConsole.writeLine(first + " " + second + " " + third);
+	            }
+	            else {
+	                jsConsole.writeLine(first + " " + third + " " + second);
+	            }
+	        }
+	        else if (second > first && second > third) {
+	            if (first > third) {
+	                jsConsole.writeLine(second + " " + first + " " + third);
+	            }
+	            else {
+	                jsConsole.writeLine(second + " " + third + " " + first);
+	            }
+	        }
+	        else if (third > first && third > second) {
+	            if (first > second) {
+	                jsConsole.writeLine(third + " " + first + " " + second);
+	            }
+	            else {
+	                jsConsole.writeLine(third + " " + second + " " + third);
+	            }
+	        }
+	    }
+	</script>			  
+</body>
+</html>

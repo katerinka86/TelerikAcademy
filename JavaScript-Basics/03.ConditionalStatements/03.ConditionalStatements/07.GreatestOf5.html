@@ -1,0 +1,55 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<title>Biggest of 5 numbers</title>
+    <!-- Write a script that finds the greatest of given 5 variables.-->
+	<link href="styles/js-console.css" rel="stylesheet" />
+</head>
+<body>
+	<label for="first">First: </label>
+	<input type="text" id="first"/>
+	<br />
+    <label for="second">Second: </label>
+	<input type="text" id="second"/>
+	<br />
+    <label for="third">Third: </label>
+	<input type="text" id="third"/>
+	<br />
+    <label for="forth">Forth: </label>
+	<input type="text" id="forth"/>
+	<br />
+    <label for="fifth">Fifth: </label>
+	<input type="text" id="fifth"/>
+	<br />							  
+	<a href="#" onclick="biggestNum()">Check</a>
+	<div id="console">
+	</div>
+	<script src="scripts/js-console.js">	  
+	</script>		  
+	<script>
+	    function biggestNum() {
+	        var first = jsConsole.readFloat("#first"),
+                second = jsConsole.readFloat("#second"),
+                third = jsConsole.readFloat("#third"),
+                forth = jsConsole.readFloat("#forth"),
+                fifth = jsConsole.readFloat("#fifth");
+	        if (first > second && first > third && first > forth && first > fifth) {
+	            jsConsole.writeLine("Number " + first+ " is the biggest!");
+	        }
+	        else if (second > first && second > third && second > forth && second > fifth) {
+	            jsConsole.writeLine("Number " + second + " is the biggest!");
+	        }
+	        else if (third > first && third > second && third > forth && third > fifth) {
+	            jsConsole.writeLine("Number " + third + " is the biggest!");
+	        }
+	        else if (forth > first && forth > second && forth > third && forth > fifth) {
+	            jsConsole.writeLine("Number " + forth + " is the biggest!");
+	        }
+	        else {
+	            jsConsole.writeLine("Number " + fifth + " is the biggest!");
+	        }
+	    }
+	</script>			  
+</body>
+</html>
+

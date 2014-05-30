@@ -1,0 +1,42 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<title>Biggerst of 3 numbers</title>
+    <!-- Write a script that finds the biggest of three integers.-->
+	<link href="styles/js-console.css" rel="stylesheet" />
+</head>
+<body>
+	<label for="tb-first">First number: </label>
+	<input type="text" id="tb-first"/>
+	<br />							  
+	<label for="tb-second">Second number: </label>
+	<input type="text" id="tb-second"/>
+	<br />
+    <label for="tb-third">Third number: </label>
+	<input type="text" id="tb-third"/>
+	<br />
+	<a href="#" onclick="findBigger()">Check</a>
+	<div id="console">
+	</div>
+	<script src="scripts/js-console.js">	  
+	</script>		  
+	<script>
+
+	    function findBigger() {
+	        var first = jsConsole.readInteger("#tb-first");
+	        var second = jsConsole.readInteger("#tb-second");
+	        var third = jsConsole.readInteger("#tb-third");
+
+	        if (first > second && first > third) {
+	            jsConsole.writeLine("Number " + first + " is the biggest!");
+	        }
+	        else if (second > first && second > third) {
+	            jsConsole.writeLine("Number " + second + " is the biggest!");
+	        }
+	        else if (third > first && third > second) {
+	            jsConsole.writeLine("Number " + third + " is the biggest!");
+	        }
+	    }
+	</script>			  
+</body>
+</html>
