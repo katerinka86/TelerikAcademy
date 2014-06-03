@@ -1,0 +1,31 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<title>Numbers not divisible by 3 and 7</title>
+    <!-- Write a script that prints all the numbers from 1 to N, that are not divisible by 3 and 7 at the same time-->
+	<link href="styles/js-console.css" rel="stylesheet" />
+</head>
+<body>
+	<label for="tb-first">N = </label>
+	<input type="text" id="tb-first"/>
+	<br />							  
+	<a href="#" onclick="numbersToN()">Check</a>
+	<div id="console">
+	</div>
+	<script src="scripts/js-console.js">	  
+	</script>		  
+	<script>
+	    function numbersToN() {
+	        var n = jsConsole.readInteger("#tb-first");
+	        for (var i = 1; i <= n; i++) {
+                if(i%7===0 || i%3===0){
+                   continue;
+                }
+                else{
+                    jsConsole.write(i + " ");
+                }
+	        }
+	    }
+	</script>			  
+</body>
+</html>

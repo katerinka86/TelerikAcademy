@@ -1,0 +1,26 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<title>Min and max value</title>
+    <!-- Write a script that finds the max and min number from a sequence of numbers-->
+	<link href="styles/js-console.css" rel="stylesheet" />
+</head>
+<body>
+	<label for="tb-first">Sequence of numbers, splited my space:</label>
+	<input type="text" id="tb-first"/>
+	<br />							  
+	<a href="#" onclick="minAndMaxValue()">Check</a>
+	<div id="console">
+	</div>
+	<script src="scripts/js-console.js">	  
+	</script>		  
+	<script>
+	    function minAndMaxValue() {
+	        var n = jsConsole.read("#tb-first");
+	        var arr = n.split(" ");
+	        arr.sort();
+	        jsConsole.writeLine("Min value: " + arr[0] + ", max value: " + arr[arr.length - 1]);
+	    }
+	</script>			  
+</body>
+</html>
