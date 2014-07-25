@@ -1,0 +1,37 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <!-- Write a script that compares two char arrays lexicographically (letter by letter).
+ -->
+	<title>some array</title>
+	<link href="styles/js-console.css" rel="stylesheet" />
+</head>
+<body>		
+    <label for="tb-first">first array = </label>
+	<input type="text" id="tb-first"/>
+	<br />
+    <label for="tb-second">second array = </label>
+	<input type="text" id="tb-second"/>
+	<br />			  
+	<a href="#" onclick="someArray()">Check</a>
+	<div id="console">
+	</div>
+	<script src="scripts/js-console.js">	  
+	</script>		  
+	<script>
+	    function someArray() {
+	        var first = jsConsole.read("#tb-first");
+	        var second = jsConsole.read("#tb-second");
+	        if (first > second) {
+	            jsConsole.write("The second array is lexicographically first");
+	        }
+	        else if (second > first) {
+	            jsConsole.write("The first array is lexicographically first");
+	        }
+	        else {
+	            jsConsole.write("The arrays are lexicographically equal");
+	        }
+	    }
+	</script>			  
+</body>
+</html>

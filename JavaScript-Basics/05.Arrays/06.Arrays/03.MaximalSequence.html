@@ -1,0 +1,48 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <!-- Write a script that finds the maximal sequence of equal elements in an array.
+ -->
+	<title>some array</title>
+	<link href="styles/js-console.css" rel="stylesheet" />
+</head>
+<body>		
+    <label for="tb-first">second array = </label>
+	<input type="text" id="tb-first"/>
+	<br />			  
+	<a href="#" onclick="someArray()">Check</a>
+	<div id="console">
+	</div>
+	<script src="scripts/js-console.js">	  
+	</script>		  
+	<script>
+	    function someArray() {
+	        var length = 1;
+	        var maxLength = 0;
+	        var index = 0;
+	        var maxIndex = 0;
+	        var input = jsConsole.read("#tb-first");
+	        var someArr = [];
+	        someArr = input.split(",");
+	        someArr = someArr.map(Number);
+	        for (var i = 1; i < someArr.length; i++) {
+	            if (someArr[i-1] === someArr[i]) {
+	                length++;
+	                index++;
+	            }
+	            else {
+	                length = 1;
+	                index = 0;
+	            }
+	            if (length > maxLength) {
+	                maxLength = length;
+	                maxIndex = index;
+	            }
+	        }
+	        for (var i = maxIndex; i <= maxLength+1; i++) {
+                jsConsole.write(someArr[maxIndex] + ",")
+	        }
+	    }
+	</script>			  
+</body>
+</html>
